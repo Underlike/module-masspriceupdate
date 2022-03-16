@@ -1,0 +1,28 @@
+<form action="<?= $this->getUrl('*/*/*', ['_secure' => true]) ?>" method="post" enctype="multipart/form-data">
+    <?= $block->getBlockHtml('formkey'); ?>
+    <div class="fieldset-wrapper-title" tabindex="-1">
+        <strong class="title">
+            <span><?php echo __('Import file Mass Price Update'); ?></span>
+        </strong>
+    </div>
+
+    <div class="admin__fieldset-wrapper-content">
+        <fieldset class="admin__fieldset">
+            <div class="admin__field file">
+                <label class="admin__field-label" for="file">
+                    <span><?php echo __('File'); ?></span>
+                </label>
+                <div class="admin__field-control">
+                    <input name="file" id="file" type="file">
+                </div>
+            </div>
+
+            <div class="admin__field ">
+                <label class="admin__field-label"></label>
+                <div class="admin__field-control">
+                    <button type="submit" class="primary"><?php echo __('Send'); ?></button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</form>

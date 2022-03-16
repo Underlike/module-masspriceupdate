@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Axilais_MassPriceUpdate::axilais_mass_price_update_import" title="Mass Price Update" module="Axilais_MassPriceUpdate" sortOrder="999" resource="Magento_Backend::content" action="axilais_mass_price_update/index/import" />
+	</menu>
+</config>
